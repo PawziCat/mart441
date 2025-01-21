@@ -206,9 +206,10 @@ a:hover {
 .column-center,
 .column-right {
 
-    background-color: #ffffff; /* Right column background color */
+    background-color: #ffffff; /* Right and center column background color */
     padding: 25px;
     text-align: center;
+    min-width: 50%;
 }
 
 .right-section,
@@ -219,7 +220,7 @@ a:hover {
 
 
 .column-left {
-    background-color: #ffc0a0; /* Right column background color */
+    background-color: #ffc0a0; /* left column background color */
     padding: 25px;
     text-align: center;
     min-width: 50%;
