@@ -1,0 +1,559 @@
+/* Reset default styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'poppins-semibold', 'sans-serif';
+    line-height: 1.45em;
+    background-image: url("../images/parallax.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'poppins-bold', 'sans-serif';
+}
+
+h2 {
+    text-align: center;
+    font-family: 'poppins-bold', 'sans-serif';
+}
+
+h3 {
+    text-align: center;
+    font-family: 'poppins-bold', 'sans-serif';
+}
+
+h4 {
+    text-align: center;
+    font-family: 'poppins-bold', 'sans-serif';
+}
+
+h5 {
+    text-align: center;
+    font-family: 'poppins-bold', 'sans-serif';
+}
+ 
+
+p {
+    font-family: 'poppins-semibold', 'sans-serif';
+    font-size: 18px;
+    line-height: 1.45em;
+    color: #255857;
+}
+
+/* Style for the horizontal line */ 
+hr {  
+    height: 4px; 
+    background-color: #000000;
+    border-color: #000000;
+    border-top: solid;  
+}  
+
+.opening-paragraph {
+    color: #255857;;
+    font-size: 18px;
+    text-indent: 20px;
+    text-align: left;
+    line-height: 1.45em;
+}
+
+.second-paragraph {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'poppins-semibold', 'sans-serif';
+    text-indent: 20px;
+    text-align: left;
+    line-height: 1.45em;
+    padding: 20px;
+}
+
+
+/* Navigation styling */
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'poppins-semibold', sans-serif; /* Falls back to sans-serif if font fails to load */
+    letter-spacing: 2px;
+    text-shadow: .4px .4px 0 #000000; /* Top-left shadow */
+    font-size: 14px;
+    width: 100%;
+    border-top: 5px solid #255857; /* border on the top */
+    border-bottom: 5px solid #255857; /* border on the bottom */
+    top: 0px;
+    position: sticky;
+    margin-bottom: 6px;
+}
+
+nav, 
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav, ul, 
+li {
+    color: #255857;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* links */
+a:link {
+    font-size: 14px;
+   color: #255857;
+   text-decoration: none;
+   font-family: 'poppins-semibold', 'sans-serif'; 
+}
+
+a:visited {
+   color: #255857;
+   text-decoration: none;
+}
+
+a:hover {
+   color: #e47e6a;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+
+
+/* Set a fixed height for the carousel */
+#carouselExampleIndicators {
+    height: 600px;
+}
+
+/* Ensure carousel-inner takes up the full height */
+.carousel-inner {
+    height: 100%;
+}
+
+/* Ensure the images fill the carousel and maintain their aspect ratio */
+.carousel-inner img {
+    height: 600px; /* Fill the height of the carousel */
+    width: auto; /* Ensure the width covers the full container */
+    object-fit: cover; /* Maintain aspect ratio while covering the full space */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Makes the image fill the container */
+    width: 100%; /* Ensures the image takes full width */
+    height: 100%; /* Ensures the image fills the full height */
+}
+
+
+
+/*Grid styling for blocks */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    flex-direction: column;
+    max-width: 100%; /* Limits the width for readability */
+    gap: 20px; /* Spacing between columns */
+    padding: 5px 10px 5px 10px; /* Padding on top, bottom, and sides */
+    margin: 35px;
+}
+
+.grid-container-about {
+    display: block;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    flex-direction: column;
+    gap: 20px; /* Spacing between columns */
+    padding: 5px 10px 5px 10px; /* Padding on top, bottom, and sides */
+    margin: 10px;
+    height: 75%;
+    overflow: auto;
+}
+
+
+.grid-container-brand {
+    display: block;
+    grid-template-columns: 1fr 1fr; /* Two equal-width column */
+    flex-direction: column;
+    gap: 20px; /* Spacing between columns */
+    padding: 5px 10px 5px 10px; /* Padding on top, bottom, and sides */
+    margin: 10px;
+    height: 100%;
+}
+
+
+.grid-container-body {
+    display: block;
+    grid-template-columns: 1fr; /* Three equal-width columns */
+    flex-direction: column;
+    gap: 25px; /* Spacing between columns */
+    padding: 5px 10px 5px 10px; /* Padding on top, bottom, and sides */
+    margin: 20px;
+}
+
+
+/* block styling */
+.column-center,
+.column-right {
+
+    background-color: #ffffff; /* Right column background color */
+    padding: 25px;
+    text-align: center;
+}
+
+.right-section,
+.center-section {
+    background-color: #ffffff;
+    text-align: center; /* Centers the text */
+}
+
+
+.column-left {
+    background-color: #ffc0a0; /* Right column background color */
+    padding: 25px;
+    text-align: center;
+    min-width: 50%;
+}
+
+.left-section {
+    background-color: #ffc0a0;
+    text-align: center; /* Centers the text */
+}
+
+
+/* green body block styling */
+.column-body-green {
+    background-color: #255857; /* body block background color */
+    padding: 25px;
+    text-align: center;
+}
+
+.body-section-green {
+    background-color: #255857;
+}
+
+/* peach body block styling */
+.column-body-peach {
+    background-color: #e47e6a; /* body block background color */
+    padding: 25px;
+    text-align: center;
+}
+
+.body-section-peach {
+    background-color: #e47e6a;
+}
+
+/* peach body block styling */
+.column-body-orange {
+    background-color: #ffc0a0; /* body block background color */
+    padding: 25px;
+    text-align: center;
+}
+
+.body-section-orange {
+    background-color: #ffc0a0;
+}
+
+/* pink body block styling */
+.column-body-pink {
+    background-color: #feebe1; /* body block background color */
+    padding: 25px;
+    text-align: center;
+}
+
+.body-section-pink {
+    background-color: #feebe1;
+}
+
+/* white body block styling */
+.column-body-white {
+    background-color: #ffffff; /* body block background color */
+    padding: 25px;
+    text-align: center;
+}
+
+.body-section-white {
+    background-color: #ffffff;
+}
+
+/* body block styling */
+.column-body {
+    background-color: #feebe100; /* body block background color */
+    padding: 0px;
+    text-align: center;
+}
+
+.body-section {
+    background-color: #feebe100;
+    max-width: 100%;
+}
+
+
+/* about block styling */
+.column-right-about {
+    align-items: center;
+    background-color: #f8f8f8; /* Right column background color */
+    padding: 25px;
+    text-align: center;
+    display: fixed;
+    height: 100%;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+.column-left-about {
+    align-items: center;
+    background-color: #9bdeea; /* Left column background color */
+    padding: 25px;
+    text-align: center;
+    display: fixed;
+    max-width: 100%;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+.right-section-about {
+    text-align: center;
+    background-color: #f8f8f8;
+    display: fixed;
+    height: 100%;
+    max-width: 865px; /* Limits the width for readability */
+}
+
+.left-section-about {
+    text-align: center;
+    background-color: #9bdeea;
+    display: fixed;
+    max-width: 865px; /* Limits the width for readability */
+}
+
+.contact-section-about {
+    text-align: center;
+    align-items: center;
+    background-color: #9bdeea;
+    display: fixed;
+    max-width: 865px; /* Limits the width for readability */
+}
+
+
+
+/* brand block styling */
+.column-right-brand {
+    background-color: #f8f8f8; /* Right column background color */
+    padding: 25px;
+    text-align: left;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+.column-left-brand {
+    background-color: #000000; /* Left column background color */
+    padding: 25px;
+    text-align: left;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+.right-section-brand {
+    background-color: #f8f8f8;
+    max-width: 800px; /* Limits the width for readability */
+}
+
+.left-section-brand {
+    background-color: #000000;
+    max-width: 800px; /* Limits the width for readability */
+}
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #e47e6a;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    max-height: 80%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 21px;
+    font-family: 'poppins-semibold', 'sans-serif';
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #255857;
+    color: #ffffff;
+    font-size: 21px;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #feebe1;
+  }
+
+  .collapsible:after {
+    content: '\02795';/* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #ffffff;
+    float: left;
+  }
+
+
+
+  .contact-map-a {
+    background-color: #9bdeea;
+}  
+
+
+
+/* black banner styling */
+.banner {
+    height: 250px;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.3em;
+    text-align: center;
+    letter-spacing: 0.2em;
+    float: center;
+}
+
+
+/* Banner image styling */
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    float: center;
+}
+
+
+/* logo image styling */
+.logo-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: center;
+}
+
+/* logo image styling */
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: center;
+}
+
+.centered-image {
+    max-width: 100%; /* Keeps image within column width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes inline spacing */
+    margin: 0 auto; /* Centers image horizontally */
+}
+
+/*  */
+
+ /* contact image */
+.about-image {
+    text-align: center;
+    max-width: 500px; /* Keeps image within column width */
+    height: auto; /* Maintains aspect ratio */
+    display: grid; /* Removes inline spacing */
+    margin: 0 auto; /* Centers image horizontally */
+}
+
+
+/* Styling for author */
+#quote-author-green {
+    font-size: 18px;
+    color: #255857;;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'poppins-semibold', 'sans-serif';
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+#quote-author-pink {
+    font-size: 18px;
+    color: #e47e6a;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'poppins-semibold', 'sans-serif';
+}
+
+#quote-author-white {
+    font-size: 18px;
+    color: #e47e6a;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'poppins-semibold', 'sans-serif';
+}
+
+/* Styling for email and phone */
+#email-phone {
+    font-size: 18px;
+    color: #f8f8f8;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'poppins-regular', 'sans-serif';
+    height: 100%;
+    text-align: center;
+}
+
+/* styling for branding company identity */
+#company-identity {
+    font-size: 32px;
+    color: #9bdeea;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'poppins-semibold', 'sans-serif';
+    height: 100%;
+}
+
+
+/* Full-width video styling */
+.full-width-video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* portfolio video styling */
+.gallery-video {
+    width: 500px;
+    height: 286px;
+    object-fit: cover;
+    display: block;
+    margin: auto;     
+}
+
+
+/* Footer styling */
+footer {
+    font-family: 'poppins-bold', 'sans-serif';
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #255857;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}

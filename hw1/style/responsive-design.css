@@ -1,0 +1,174 @@
+/* Media Queries for Responsive Design ----------------------------------- */
+/* 768px max width ------------------------------------------------------- */
+
+
+@media (max-width: 865px) {
+        .quote-author-black,
+    .quote-author-about,
+    .quote-author,
+    .email-phone {
+        display: block; /* Place author name on its own line */
+        font-size: 1.2em; /* Adjust author font size */
+        margin-top: 5px; /* Space between the quote and author */
+        padding-bottom: 30px;
+        color: #255857;;
+        text-align: center;
+        font-family: 'poppins-semibold', 'sans-serif';
+    }
+
+    .quote-author-white {
+        display: block; /* Place author name on its own line */
+        font-size: 1.2em; /* Adjust author font size */
+        margin-top: 5px; /* Space between the quote and author */
+        padding-bottom: 30px;
+        color: #f8f8f8;
+        text-align: center;
+        font-family: 'poppins-semibold', 'sans-serif';
+    }
+
+    .body {
+        font-family: 'poppins-semibold', 'sans-serif'; 
+        line-height: 1.45em; /* Adjust font size for smaller screens */
+        background-color: #f4f4f4; 
+        height: 100%;
+    }
+
+    /* Spread two columns evenly */
+    .grid-container,
+    .grid-container-body,
+    .grid-container-about,
+    .grid-container-brand,
+    .grid-container-video {
+        flex-direction: column; /* Stack columns on top of each other */
+        justify-content: center;
+        height: 100%;
+    }
+
+    /* Spread three columns evenly */
+    .grid-container-gallery {
+        flex-direction: column; /* Stack columns on top of each other */
+        justify-content: space-between; /* Spread the columns evenly */
+    }
+
+
+    .column-right,
+    .column-center,
+    .column-left,
+    .column-left-about,
+    .column-right-about,
+    .column-left-brand,
+    .column-right-brand,
+    .column-left-video,
+    .column-right-video,
+    .column-body {
+        justify-content: space-between; /* Spread the columns evenly */
+    }
+
+    .column-right div,
+    .column-center div,
+    .column-left div,
+    .column-left-about div,
+    .column-right-about div,
+    .column-left-brand div,
+    .column-right-brand div,
+    .column-left-video div,
+    .column-right-video div,
+    .column-body div {
+        align-items: center; /* Vertically Aligns Text */
+        flex: 1 100%; /* One item per row */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .column-right .right-section,
+    .column-center .center-section,
+    .column-left .left-section,
+    .column-left-about .left-section-about,
+    .column-right-about .right-section-about,
+    .column-left-branding .left-section-branding,
+    .column-right-branding .right-section-branding,
+    .column-body .body-section {
+        align-items: center;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center vertically */
+        padding: 20px; /* Add spacing around the content */
+            margin: auto;
+    }
+
+    .column-left-about 
+    .contact-section-about {
+        align-items: center;
+        display: fixed;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center vertically */
+        padding: 20px; /* Add spacing around the content */
+    }
+
+    .hero-image {
+    max-width: 100%; /* Make sure image does not overflow */
+    max-height: 250%; 
+    }
+
+    .banner-image {
+        max-width: 100%; /* Make sure image does not overflow */
+        max-height: 100%; 
+    }
+
+    .banner {
+        max-width: 100%; /* Make sure image does not overflow */
+        max-height: 100%; 
+    }
+
+    .about-image {
+        max-width: 100%; /* Make sure image does not overflow */
+        max-height: 500px; 
+    }
+
+    .centered-image {
+        max-width: 100%; /* Make sure image does not overflow */
+        max-height: 100%; 
+    }
+
+    .gallery-image {
+        max-width: 100%; /* Make sure image does not overflow */
+        max-height: 100%;  
+    }
+
+    .full-width-video {
+        max-width: 100%; /* Make sure video does not overflow */
+        max-height: 100%; 
+    }
+
+
+    .nav, 
+    .ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start;
+    }
+
+    .nav,
+    .ul, 
+    .li {
+        margin: 5px 0;
+    }
+
+    .dropdown {
+        position: static; /* Inline with parent */
+        box-shadow: none;
+    }
+}
+
+
+
+/* 480px max width -------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+    .grid-container div {
+        padding: 10px; /* Minimal padding */
+    }
+
+    .about-section {
+        padding: 10px; /* Adjust text padding */
+    }
+}

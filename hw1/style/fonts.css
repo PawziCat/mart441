@@ -1,0 +1,24 @@
+/* This is the file, d"fonts.css." */
+@font-face {
+   font-family: 'poppins-regular', 'sans-serif';
+   src: url('../fonts/poppins-regular.ttf') format('truetype');
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'poppins-bold', 'sans-serif';
+   src: url('../fonts/poppins-bold.ttf') format('truetype');
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: 'poppins-italic', 'sans-serif';
+   src: url('../fonts/poppins-italic.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins-semibold', 'sans-serif';
+  src: url('../fonts/poppins-semibold.ttf') format('truetype');
+  font-weight: 700;
+}
