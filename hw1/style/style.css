@@ -79,6 +79,15 @@ hr {
     padding: 20px;
 }
 
+.contact-paragraph {
+    color: #255857;;
+    font-size: 16px;
+    text-indent: 0px;
+    text-align: center;
+    line-height: 1.45em;
+    padding: 5px;
+}
+
 
 /* Navigation styling */
 nav {
