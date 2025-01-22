@@ -15,12 +15,10 @@
 * Added fonts to my site.
 * Used images to add visual interest.
 
-
 ### Interactive Element:
 * Used a collapsable to add visual interest and reduce the information on the page into managable parts. This also breaks up the sections into distint parts.
 * Added a menu with a drop down that is static and only loops index.
 * Placed an embedded map.
-
 
 ### Probems or Frustrations:
 * Im not sure if my meta@s are functioning properly or if I even did them correctly, I feel like I need help understanding them better.
@@ -28,16 +26,16 @@
 * Columns with images keep extending rather than shifting above or below the other column on smaller screens.
 * for some reason the font Poppins will not load on the site and is being ran as the alt font sans-serif.
 
-
 ### Reflection:
 * I have a slider-test.html in the hw1 folder that I was using to experiment with for a carousel from my final in MART341.
 * Extra styles in the css styles and bootstraps in the js folder that are not currently in use on the static site.
 
+-----
 
-## Links
-### Respository for UM Spring 2025 MART441 Web Technology
+### Links
+
+#### Respository for UM Spring 2025 MART441 Web Technology
 https://github.com/PawziCat/mart441
 
-
-### Live Site:
+#### Live Site:
 https://pawzicat.github.io/mart441/
