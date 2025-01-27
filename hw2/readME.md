@@ -24,4 +24,4 @@
 https://github.com/PawziCat/mart441
 
 #### Live Site:
-https://pawzicat.github.io/mart441/
+https://pawzicat.github.io/mart441/hw2/
