@@ -4,6 +4,7 @@
 #### January 21, 2025
 ------
 
+<<<<<<< HEAD
 
 ### Techniques and Elements:
 * For my site page I utilized column-based layout, in the future it will be easier to maintain structure and organization as the page is expanded or other pages are added
@@ -37,5 +38,5 @@
 #### Repository for UM Spring 2025 MART441 Web Technology
 https://github.com/PawziCat/mart441
 
-#### Live Site:
+### Live Site:
 https://pawzicat.github.io/mart441/
