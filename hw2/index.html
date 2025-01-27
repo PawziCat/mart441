@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Things</title>
+
+    <style> /* styles page */
+        body {
+            background-color: #c1cace; /* light grey background */
+            font-family: Arial, sans-serif;
+            color: #082335; /* dark blue background */
+        }
+
+        h1, h2, h4, h5 {
+            text-align: center;
+            color: #a2df31; /* bright green background */
+        }
+
+        h3 {
+            text-align: center;
+            color: #082335; /* dark blue background */
+        }
+
+        .container-columns {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns */
+            gap: 10px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* one column */
+            gap: 10px;
+            width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #c1cace; /* light grey background */
+
+        }
+
+        .item-grid {
+            background-color: #ffffff; /* white background */
+            padding: 20px;
+            border: 1px solid #cccccc00; /* transparent */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .item {
+            background-color: #082335; /* dark blue background */
+            text-align: center;
+            color: #ffffff;
+            padding: 20px;
+            border: 1px solid #cccccc00; /* transparent */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            grid-column: span 3;
+            text-align: center;
+            background-color: #082335; /* dark blue background */
+            color: #ffffff;
+            padding: 20px;
+            border: 1px solid #cccccc00; /* transparent */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    
+<!-- Header and greeting -->   
+    <div class="container-columns">
+        <div class="header">
+            <h1>Welcome to My Favorite Things</h1>
+    <p>Hai. Thank you for taking the time to answer my joke!
+        <br>
+        Please view the console to read about my favorite websites, games and artists as well as get the answer to the joke.</p>
+    <br>
+        </div>
+
+
+<!-- Links image -->
+        <div class="item-grid">
+            <img src="./images/existential-aye-aye.jpg" alt="Existential Aye-Aye" style="width:450px; height:auto";>
+            <p style="text-align: center;">Existential Aye-Aye, Brianna Thompson, 2024</p>
+        </div>
+
+<!-- names the image -->
+        <div class="item-grid">
+            <h2> The Echoes of a Scream:</h2> 
+            <h3>The Existential Aye-Aye</h3>
+<!-- Describes the image -->
+        <p>A sketch of a stressed and exhausted aye-aye working at a computer screams at their "human" condition. This sketch was created by myself and was inspired by Edvard Munch's The Scream, one of my personal favorite works of art.</p>
+        </div>
+
+<!-- Section on Munch -->
+        <div class="item-grid">
+            <h3>Edvard Munch</h3>
+            <p>The Scream was a part of Munch's semi-autobiographical cycle “The Frieze of Life.” During the later years of his life he created four iterations of The Scream. The first painting was created using oil, tempera, and pastel on cardboard in 1893, it currently resides in the National Gallery of Art, Oslo. The next two were both done in pastel  the first in 1893, which is located at the Munch Museum, Oslo, the second was created in 1895, and is part of a private collection) The final version was a tempera painting created in 1910, which is now a part of the National Gallery of Art, Oslo. There is also a lithographic version that was created in 1895 as well.</p>
+        </div>
+    </div>
+
+
+<!-- Describes the image -->
+    <div class="container">    
+        <div class="item" style="width: auto; height: auto; float: center;">
+<!-- links the image -->
+            <img src="./images/scream-comparison.jpg" alt="Existential Aye-Aye" style="width: 1155px; height: auto";>
+            <p> The four different iterations of "The Scream," by Edvard Munch, 1893,1893,1895, and 1910
+            </p>
+
+        </div>
+    </div>
+    
+
+<!-- link for the javascript to index-->    
+<script src="script.js"></script>
+
+    </body>
+</html>

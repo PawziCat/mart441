@@ -34,7 +34,7 @@
 
 ### Links
 
-#### Respository for UM Spring 2025 MART441 Web Technology
+#### Repository for UM Spring 2025 MART441 Web Technology
 https://github.com/PawziCat/mart441
 
 #### Live Site:
