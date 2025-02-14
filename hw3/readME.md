@@ -12,6 +12,8 @@ One of the biggest successes that I achieved during my project was that I was ab
 
 I believe that I did a great job putting in comments for the code in a manner that would make it easier for me to return back to the project in the future. Additionally this is great practice for future projects to ensure that another person could read them and understand what was going on. 
 
+Both a success and a challenge, but I had to create more than the necessary scenes in order to understand what my code was actually doing, this was a little time consuming.
+
 #### Challenges 
 
 One of the biggest challenges that I face during the project what figuring out how to get my functions to work properly. I eventually had to abandon having a health/damage system as a result of this struggles. I also had a hard time structuring my story event choices in a way that made sense. 
