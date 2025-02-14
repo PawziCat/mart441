@@ -1,0 +1,33 @@
+/* This is the file, d"fonts.css." */
+@font-face {
+    font-family: 'bacalisties', 'segoe PR';
+    src: url('../fonts/bacalisties.ttf') format('truetype');
+    font-style: normal;
+ }
+ 
+@font-face {
+    font-family: 'segoe PR', 'verdana', "sans-serif";
+    src: url('../fonts/segoepr.ttf') format('truetype');
+    font-style: normal;
+ }
+
+  @font-face {
+    font-family: 'verdana', "sans-serif";
+    src: url('../fonts/verdana.ttf') format('truetype');
+    font-style: normal;
+ }
+
+
+
+@font-face {
+    font-family: 'segoe PRB', 'verdana', "sans-serif";
+    src: url('../fonts/segoeprb.ttf') format('truetype');
+    font-style: bold;
+ }
+
+@font-face {
+    font-family: 'verdana', "sans-serif";
+    src: url('../fonts/verdanab.ttf') format('truetype');
+    font-style: bold;
+ }
+ 

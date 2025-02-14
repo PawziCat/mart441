@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Own Adventure</title>
+    <link rel="stylesheet" href="./styles/style.css"> <!-- attaches stylesheet -->
+</head>
+
+<!-- container holds content -->
+<body>
+    <div id="game-container">
+<!-- the title -->
+        <h1>The Grandest Adventure</h1>
+
+<!-- decorative image -->
+        <img id="scene-image" src="./images/paths.jpg" alt="Forest Start">  
+<!-- scene 0: start story -->
+        <div id="story-text">It was the kind of day that makes one want to start an adventure; the air was crisp and clean, the sky cloudless, and mystery beckoned beyond the distant horizon. You shoulder your pack and with a deep breath step through your door, as you close it you begin a new chapter of life. A short walk and several dozen tearful goodbyes and well wishes later, you come to the boundary of your village, with one last glance towards the only home you have ever known you start your adventure. After a few hours of uneventful travel you come to a point where the road crosses another, between the two turns there is a winding dirt path. What route will you take?</div>
+
+<!-- the choices and buttons -->
+        <div id="options">
+            <button onclick="chooseOption(1)">Take the northern road</button> <!-- scene 1: tree -->
+            <button onclick="chooseOption(2)">Take the southern road</button> <!-- scene 2: cave -->
+            <button onclick="chooseOption(3)">Follow the winding dirt path forward</button> <!-- scene 3: robbed -->
+        </div>
+<!-- starting inventory, gold and health -->
+        <div id="result" style="display:none;"></div>
+        <div id="inventory">Inventory: sword, torch, 25 gold coins, ration</div> 
+<!--    <div id="health">Health: 100 </div> -->
+        <div id="message"></div>
+    </div>
+
+<!-- links javascript to index -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

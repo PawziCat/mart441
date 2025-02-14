@@ -1,0 +1,71 @@
+/* body styles */
+body {
+    font-family: 'segoe UI', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* fonts */
+    background-color: #490827; /* burgundy background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #000000; /* black text color */
+}
+
+h1, h2, h3, h4, h5 {
+    color: #000000; /* burgundy header */
+    font-family: 'bacalisties', 'segoe UI', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* fonts */
+}
+
+/* container styles */
+#game-container {
+    background-image: url('../images/parchment.jpg'); /* parchment paper background for container */
+    background-color: #ffffff;
+    max-width: 800px; /* keeps container from exceeding 800pts in width */
+    min-width: 800px; /* keeps container from becoming smaller than 800pts in width */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#story-text {
+    margin-bottom: 20px;
+}
+
+/* button styles */
+#options button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #c73d1b; /* orange button color */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* button style hover */
+#options button:hover {
+    background-color: #490827; /* burgondy button hover color */
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* image styles */
+#scene-image {
+    max-width: 500px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* inventory and health */
+#inventory, #health, #message {
+    margin-top: 10px;
+    font-weight: bold;
+}
