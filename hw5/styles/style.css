@@ -1,0 +1,25 @@
+/* formats header */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #feebe1;
+    background-color: #255857;
+}
+
+/* formats grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 250px); /* 4 columns */
+    grid-template-rows: repeat(3, 250px); /* 3 rows */
+    gap: 20px; /* spaces grid objects 20px apart */
+    justify-content: center; 
+    margin-top: 20px; /* sets top margin */
+}
+
+/* formats array images */
+.grid img {
+    width: 250px; /* sets width */
+    height: 250px; /* sets height */
+    cursor: pointer;
+    border: 2px solid #ccc; /* creates border around images */
+}
