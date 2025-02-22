@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #feebe1;
+    background-color: #255857;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color:#e4736a;
+}
+
+
+/* Form Styles */
+form {
+    background-color: #feebe1;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0000001a;
+    width: 300px;
+    text-align: center;
+}
+
+/* form labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #255857;
+}
+
+/* forum input / responses */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #feebe1;
+    border-radius: 4px;
+}
+
+/* formats form buttosn */
+button {
+    background-color: #e4736a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #255857;
+    color:#ffffff;
+}
+
+
+/* Game Board Styles */
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 250px); /* 4 columns */
+    grid-template-rows: repeat(3, 250px); /* 3 rows */
+    gap: 20px; /* spaces grid objects 20px apart */
+    justify-content: center; 
+    margin-top: 20px; /* sets top margin */
+}
+
+/* Formats array images */
+#gameBoard img {
+    max-width: 250px; /* sets width */
+    max-height: 250px; /* sets height */
+    cursor: pointer;
+    border: 2px solid #feebe1; /* creates border around images */
+    border-radius: 8px;
+}
+
+
+/* Final Page Styles */
+#finalPage {
+    background-color: #feebe1;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#finalPage h1 {
+    margin-bottom: 20px;
+    color: #e4736a;
+}
+
+#finalPage p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #255857;
+}
+
+/* Play Again Button Styles */
+#playAgainButton {
+    background-color: #e4736a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#playAgainButton:hover {
+    background-color: #255857;
+    color: #ffffff;
+}

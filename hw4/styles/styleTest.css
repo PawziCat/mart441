@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for the main title */
+h1 {
+    color: #4b0082;
+}
+
+/* Styling for buttons */
+button {
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #9370db;
+}
+
+/* Styling for input boxes */
+input {
+    padding: 10px;
+    margin: 10px;
+}
