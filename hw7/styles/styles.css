@@ -1,0 +1,67 @@
+/* body styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #252627; /* this sets the background color of the page to dark grey */
+}
+
+/* headers */
+h1 {
+    color:#ffffff;
+}
+
+
+/* image container styles */
+#image-container {
+    margin: 20px auto;
+    width: 650px;
+    height: 850px;
+    padding: 20px;
+    background-color: #bb2828; /* this sets the background color of the page to red */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.685); /* Adds a shadow for better visual effect */
+    border-radius: 10px; /* Rounded corners for the div */
+}
+
+
+/* image styles */
+#image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* this makes the image corners rounded */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.685); /* Adds a shadow for better visual effect */
+}
+
+
+/* description container styles */
+#description-container {
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 10px; /* this makes the description container corners rounded */
+    background-color: #252627; /* this sets the background color of the page to dark grey */
+    padding: 10px; /* this add padding for spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.685); /* Adds a shadow for better visual effect */
+}
+
+
+/* description styles */
+#description {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 16px;
+    color:#ffffff;
+}
+
+
+/* button styles */
+#switch-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* this makes the button corners rounded */
+}
