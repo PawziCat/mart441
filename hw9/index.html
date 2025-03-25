@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroid Tracker</title>
+    <link rel="stylesheet" href="./styles/styles.css"> <!-- css styles -->
+</head>
+
+
+<body>
+
+    <!-- header -->
+    <div class="header">
+        <h1>Asteroid Tracker</h1>
+    </div>
+    
+
+    <!-- Button container -->
+    <div class="button-container">
+        <button id="display-button">
+            <h2>Explore</h2>
+        </button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Main container for the 2-column grid layout, initially hidden -->
+    <div class="main-container" style="display: none;">
+        <!-- Container to hold the asteroid data -->
+        <div class="container" id="asteroid-container">
+            <div id="asteroid-data"></div>
+        </div>
+        <!-- Iframe container to access content from NASA -->
+        <div class="container" id="iframe-container">
+            <iframe id="external-content" src="https://eyes.nasa.gov/apps/asteroids/#/home" frameborder="0"></iframe>
+        </div>
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="./scripts/ajax5.js"></script> <!-- ajax -->
+    <script src="./scripts/JSONajax.js"></script> <!-- JSONajax-->
+    <script src="./scripts/scripts.js"></script> <!-- scripts -->
+ 
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<asteroid>
+	<designation>4149880(2011 AH37)</designation>
+    <discovery date>January 7 2011</discoveryDate>
+    <magnitude>19.7H</magnitude>
+    <distance> : {
+        <MOID (minimum orbit intersection distance)>0.035 AU"</moid (minimum orbit intersection distance)>
+        <perihelion distance (q au 1)>0.84 AU</perihelion distance (q au 1)>
+        <aphelion distance (q au 2)>4.26 AU</aphelion distance (q au 2)>
+    </distance>
+    <orbital period (period yr)>4.06 years</orbital period (period yr)>
+    <inclination (i deg)>9.65 degrees</inclination (i deg)>
+    <PHA (potentially hazardous asteroid)>Yes</PHA (potentially hazardous asteroid)>
+    <orbit class>Apollo</orbit class>
+</asteroid>

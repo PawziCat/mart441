@@ -1,0 +1,112 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/galaxy.jpg'); /* background image */
+    background-size: cover; /* background image covers the entire page */
+    background-position: center; /* center the background image */
+    background-attachment: fixed; /* keeps the background image fixed during scrolling */
+}
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #b2cee5be; /* Add a semi-transparent background to the header */
+    box-shadow: 0 0 10px #000000be;
+    z-index: 1000; /* Ensure the header is above other content */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* headings */
+h1 {
+    margin: 0;
+    color: #1d0924;
+}
+
+h2 {
+    margin: 0;
+    color: #b2cee5;
+}
+
+
+/* button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full viewport height */
+}
+
+/* button */
+#display-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #421458;
+    width: 300px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* button hover */
+#display-button:hover {
+    background-color: #521458;
+}
+
+/* main container to create a 2-column grid layout */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* makes two equal columns */
+    gap: 50px; /* space between columns */
+    max-width: 1800px;
+    margin: 100px auto; /* centers the main container, adds top margin to stop overlap with the header */
+    padding: 20px;
+}
+
+/* containers */
+.container {
+    background-color: #b2cee5be; /* Add a semi-transparent background to the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    max-height: 800px; /* Set a maximum height for the containers */
+    max-width: 1000px; /* Set a maximum height for the containers */
+}
+
+/* styles for each asteroid entry */
+.asteroid {
+    border-bottom: 8px solid #b2cee536;
+    padding: 20px;
+}
+
+/* remove border for the last asteroid entry */
+.asteroid:last-child {
+    border-bottom: none;
+}
+
+/* styles for the asteroid designation */
+.asteroid h2 {
+    margin: 10px;
+    font-size: 1.2em;
+    color: #2e1458;
+}
+
+/* Styles for the asteroid details */
+.asteroid p {
+    margin: 10px;
+    color: #1d0924;
+}
+
+/* Styles for the iframe */
+#iframe-container iframe {
+    width: 100%;
+    height: 100%; /* Adjust the height to fill the container */
+    border: none;
+}
