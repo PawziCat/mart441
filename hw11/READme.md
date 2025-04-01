@@ -6,7 +6,7 @@
 
 
 ### Reflection:
-The project was very remenicent of older
+The project was very remenicent of work from a project in creative coding and this made the project much easier. The biggest struggle I had was being unable to get my background music to play automatically and was forced to put controls in. I think this may be due to my browser not supporting it. However, there was no error in teh developer tools so I am not entirely sure.
 
 -----
 
