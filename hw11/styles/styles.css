@@ -1,0 +1,17 @@
+/* Style for the body to set the background image and center the canvas */
+body {
+  background-color: #1d1d1d; /* Set the background image */
+  display: flex; /* Use flexbox to center the canvas */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+/* Style for the canvas element */
+canvas {
+  border: 20px solid #008080; /* Add a solid black border */
+  background-color: #ffffc1; /* Set a light grey background color */
+}
+
+
