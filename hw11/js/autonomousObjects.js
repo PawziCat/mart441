@@ -1,4 +1,4 @@
-// Class representing an autonomous object
+// Class for autonomous object
 class AutonomousObject {
     constructor(x, y, radius, color, canvas) {
         this.x = x; // X-coordinate of the object
