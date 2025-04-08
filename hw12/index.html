@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Game</title>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <!-- Black screen with play button -->
+    <div id="startScreen">
+        <button id="playButton">Play</button>
+    </div>
+    <!-- Container to center the game elements -->
+    <div id="gameContainer" style="display: none;">
+        <!-- Div for the score board -->
+        <div id="scoreBoard">Score: 0</div>
+        <!-- Div for the game title -->
+        <div id="gameTitle">Game Title</div>
+        <!-- Div for the canvas element -->
+        <div id="canvasContainer">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file for game logic -->
+    <script src="./js/scripts.js"></script>
+    <!-- Link to the external JavaScript file for game logic -->
+    <script src="./json/obstacles.json"></script>
+    <!-- Link to the external JavaScript file for game logic -->
+    <script src="./json/player.json"></script>
+    <!-- Link to the external JavaScript file for game logic -->
+    <script src="./json/collectibles.json"></script>
+
+
+</body>
+
+</html>
