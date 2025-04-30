@@ -2,7 +2,7 @@
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8" />
-    <title>Making your first Phaser 3 Game - Part 5</title>
+    <title>Zuka's Shadow</title>
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
     <style type="text/css">
         body {
@@ -63,8 +63,17 @@
         this.load.image('star', 'assets/star.png'); // star collectible
         this.load.image('ghost', 'assets/ghost.png'); // ghost, the bad guys
         this.load.image('diamond', 'assets/diamond.png'); // diamond collectible
-        this.load.spritesheet('player', 'assets/player.png', { frameWidth: 100, frameHeight: 80 }); // player fox sprite sheet. 10 frames
+        this.load.spritesheet('player', 'assets/player.png', { // player fox sprite sheet. 10 frames
+            frameWidth: 100, 
+            frameHeight: 80 
+        });
+        
+        this.load.audio('collectStarSound', 'assets/sounds/collectStar.wav'); // star sound
+        this.load.audio('collectDiamondSound', 'assets/sounds/collectDiamond.wav'); // diamond sound
+        this.load.audio('jumpSound', 'assets/sounds/jump.wav');
     }
+
+
 
     function create ()
     {
@@ -87,13 +96,13 @@
         platforms.create(1595, 1000, 'right_mini').setScale(2); // right bottom
 
         // platforms, numbered top to bottom. see platform.jpg in images for clarity
-        platforms.create(600, 250, 'ground').setScale(2); // platform 1
-        platforms.create(1600, 250, 'ground').setScale(2); // platform 2
-        platforms.create(200, 450, 'ground_mini').setScale(2); // platform 3
-        platforms.create(1000, 450, 'ground').setScale(2); // platform 4
-        platforms.create(600, 650, 'ground').setScale(2); // platform 5
-        platforms.create(1200, 850, 'ground').setScale(2); // platform 6
-        platforms.create(700, 1000, 'ground_mini').setScale(2); // platform 7
+        platforms.create(600, 250, 'ground').setScale(1); // platform 1
+        platforms.create(1600, 250, 'ground').setScale(1); // platform 2
+        platforms.create(200, 450, 'ground_mini').setScale(1); // platform 3
+        platforms.create(1000, 450, 'ground').setScale(1); // platform 4
+        platforms.create(600, 650, 'ground').setScale(1); // platform 5
+        platforms.create(1200, 850, 'ground').setScale(1); // platform 6
+        platforms.create(700, 1000, 'ground_mini').setScale(1); // platform 7
         
         
     // player fox sprite sheet. 10 frames w: 100px and l: 80
@@ -127,6 +136,7 @@
 // input events       
         cursors = this.input.keyboard.createCursorKeys();
         
+        
 //  Some stars to collect, 10 in total, evenly spaced 150 pixels apart along the x axis
         stars = this.physics.add.group({
             key: 'star',
@@ -153,6 +163,13 @@
             child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
             child.setGravityY(500); // Add gravity to the diamond
         });
+
+    
+    // Sound effects for Stars and Diamonds
+        this.collectStarSound = this.sound.add('collectStarSound');
+        this.collectDiamondSound = this.sound.add('collectDiamondSound');
+
+
 //  the ghosts
         ghosts = this.physics.add.group();
 
@@ -220,6 +237,9 @@
         diamond.setVelocity(Phaser.Math.Between(-200, 200), 20);
         diamond.allowGravity = false;
 
+        // Play the star collection sound
+        this.collectDiamondSound.play();
+
         //  Add and update the score
         score += 40;
         scoreText.setText('Score: ' + score);
@@ -233,6 +253,10 @@
         star.setCollideWorldBounds(true);
         star.setVelocity(Phaser.Math.Between(-200, 200), 20);
         star.allowGravity = false;
+
+        // Play the star collection sound
+        this.collectStarSound.play();
+
 
         //  Add and update the score
         score += 10;
