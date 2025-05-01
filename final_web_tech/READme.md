@@ -7,7 +7,7 @@
 
 
 ### Project Description:
-For my game I decided to continue building on a previous game *Zuka's Shadow*. *Zuka's Shadow* it is about a dog named Zuka that is trying to survive in a world filled with dangerous, sugar crazed ghosts. The player objective is to collect Star Cookies to earn points and survive as long as possible, but be wary, the more stars you collect the more Ghosts Zuka attracts.
+For my game I decided to continue building on a previous game *Zuka's Shadow*. *Zuka's Shadow* it is about a dog named Zuka that is trying to survive in a world filled with dangerous, sugar crazed ghosts. The player objective is to collect Star Cookies to earn points and survive as long as possible, but be wary, the more Star Cookies you collect the more Ghosts Zuka attracts.
 
 
 
@@ -35,6 +35,7 @@ For my game I decided to continue building on a previous game *Zuka's Shadow*. *
 
 #### Notes:
 See data folder for a numbered layout of platforms
+
 See data folder for the Attributions and Copyrights for all used assets.
 
 
