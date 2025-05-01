@@ -1,6 +1,6 @@
 ### Brianna Thompson
 #### MART441-Web-Tech
-#### Homework 15
+#### Final Project
 #### May 9, 2025
 ------
 
@@ -21,16 +21,13 @@ For my game I decided to continue building on a previous game *Zuka's Shadow*. *
 * Add sound effects to the dog.
 * Add sound effects to the ghost when they drop in.
 * Add sound effect when the player dies.
+* Added a level system in which when all the stars are collect, the level will change when the next round of objects and / or enemies appear.
 * Added a title screen
 * Added a button to initiate the game.
   * Since the code kept wanting to position the start button to the left of the canvas and then center both on the page. To avoid this, I created a second page called 'title.html' to place the button and initiate the game from. In order for this to work, BOTH pages must have phaser.js in the scripts.
   * I struggled to get the button to load the other page at first, it ended up being my placement of the code, the buttons redirect needed to be after the images.
+* Added a game over button that redirects the player back to the title page when the player dies.
 
-
-
-### Planned Additional Changes:
-* Added a level system in which when all the stars are collect, the level will change when the next round of objects and / or enemies appear.
-* POSSIBLY add other enemies.
 
 
 
@@ -48,4 +45,4 @@ See data folder for the Attributions and Copyrights for all used assets.
 https://github.com/PawziCat/mart441
 
 ### Live Site:
-https://pawzicat.github.io/mart441/final/
+https://pawzicat.github.io/mart441/final441/
