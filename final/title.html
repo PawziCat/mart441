@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zuka's Shadow</title>
+        <script src="https://cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+        <style type="text/css">
+            /* Set the height of the body and html to 100% and remove default margin */
+            body, html {
+                height: 100%;
+                margin: 0;
+                background-image: url('assets/sky.png');
+                background-size: 1920pt, 1080pt; /* Ensures the background image covers the entire page */
+                background-position: center; /* Centers the background image */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+    
+
+            /* Style for the header */
+            .header {
+                font-size: 56pt;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-style: bold;
+                width: 100%;
+                text-align: center;
+                
+            }
+    
+
+            /* Style for the start button */
+            .button-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-grow: 1;
+                padding-bottom: 250pt;
+            }
+    
+            #startButton {
+                padding: 20px 60px;
+                font-size: 16px;
+                color: #e6e7e7;
+                cursor: pointer;
+                background-color: #111213; /* Slightly transparent background for better visibility */
+                border: none;
+                border-radius: 10px;
+            }
+
+            #startButton:hover {
+                background-color: #808184; /* Darker grey on hover */
+            }
+
+            
+            /* Style for the fox image */
+            .dog {
+                align-content: center;
+                position: absolute;
+                bottom: 80pt;
+                left: 850pt;
+            }
+
+
+            /* Style for the ghost images */
+            .ghost_top_left {
+                position: absolute;
+                top: 200pt;
+                left: 150pt;
+            }
+
+            .ghost_top_right {
+                position: absolute;
+                top: 55pt;
+                right: 150pt;
+            }
+
+            .ghost_left {
+                position: absolute;
+                bottom: 125pt;
+                left: 350pt;
+            }
+
+            .ghost_center {
+                align-content: center;
+                position: absolute;
+                bottom: 550pt;
+                right: 650pt;
+            }
+
+            .ghost_right {
+                position: absolute;
+                bottom: 25pt;
+                right: 100pt;
+            }
+
+    </style>
+</head>
+
+    <body>
+
+        <!-- header container -->
+        <div class="header">
+            <img src="assets/header.png" alt="Zukas_Shadow">
+        </div>
+
+
+        <!-- button container -->
+        <div class="button-container">
+            <!-- Start button centered on the page -->
+            <button id="startButton">
+                <h1>Start</h1>
+            </button>
+        </div>
+
+        
+        <!-- dog image, center align -->
+        <div class="dog">
+            <img src="assets/dog_title.png" alt="Dog_Title">
+        </div>
+
+        <!-- ghost_top image, top left align -->
+        <div class="ghost_top_left">
+            <img src="assets/ghost_title_top_left.png" alt="Ghost_Title_Top_Left">
+        </div>
+
+        <!-- ghost_top image, top right align -->
+        <div class="ghost_top_right">
+            <img src="assets/ghost_title_top_right.png" alt="Ghost_Title_Top_Right">
+        </div>
+
+        <!-- ghost_left image, left align -->
+        <div class="ghost_left">
+            <img src="assets/ghost_title_left.png" alt="Ghost_Title_Left">
+        </div>
+
+        <!-- ghost_center image, center align -->
+        <div class="ghost_center">
+            <img src="assets/ghost_title_center.png" alt="Ghost_Title">
+        </div>
+
+        <!-- ghost_right image, right align -->
+        <div class="ghost_right">
+            <img src="assets/ghost_title_right.png" alt="Ghost_Title_Right">
+        </div>
+    
+        
+
+
+    <script>
+        // Add event listener to the start button
+        document.getElementById('startButton').addEventListener('click', function() {
+            // Redirect to 'game.html' when the button is clicked
+            window.location.href = 'game.html';
+
+        
+        // Show the GAME OVER button
+        document.getElementById('gameOverButton').style.display = 'block'
+
+        });
+
+    </script>
+            
+    
+</body>
+
+</html>
+    
