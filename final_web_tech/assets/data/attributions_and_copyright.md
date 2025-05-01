@@ -23,7 +23,7 @@ So a very special thank you to:
 ### Michael Cassens (Class Resources)
   * star.png
 
-<br/>4
+<br/>
 
 ## Fonts:
 * Marcelo Magalhães
