@@ -1,6 +1,6 @@
 ### Brianna Thompson
 #### MART441-Web-Tech
-#### finalFinal Project
+#### Final Project
 May 9, 2025
 ------
 
