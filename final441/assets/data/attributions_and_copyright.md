@@ -29,6 +29,8 @@ So a very special thank you to:
 * Marcelo Magalhães
   * Name: Londrina Sketch, created under a SIL OPEN FONT LICENSE Version 1.1 
   * downloaded from fonts.google.com on April 30, 2025
+ 
+ <br/>
 
 ## Sound Effects:
 
