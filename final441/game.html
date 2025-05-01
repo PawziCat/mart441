@@ -17,8 +17,21 @@
         }
 
 
+        /* Style for the music */
+        .music-container {
+            display: flex;
+            justify-content: right;
+             align-items: top;
+            flex-grow: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-        /* Style for the start button */
+
+        /* Styles for the start button */
         .button-container {
             display: flex;
             justify-content: center;
@@ -31,7 +44,6 @@
             height: 100%;
         }
 
-    
         #gameOverButton {
             padding: 20px 60px;
             font-size: 16px;
@@ -41,7 +53,6 @@
             border: none;
             border-radius: 10px;
             display: none; /* Hide the button initially */
-
         }
 
         #gameOverButton:hover {
@@ -52,6 +63,11 @@
 </head>
 
 <body>
+
+    <!-- Embed background music that plays automatically and loops -->
+     <div class="music-container">
+        <audio id="backgroundMusic" src="assets/sounds/backgroundMusic.wav" autoplay loop controls></audio>
+    </div>
 
         
     <!--  button container -->

@@ -1,6 +1,6 @@
 # Attributions and Copyrights
 
-The following creators, musicians and artists are a group of wonderfully talented people and teams. Without the assets they created, this game would not be what it is. All assets were used within either Creative Common (0) or Attribution 3.0.
+The following creators, musicians and artists are a group of wonderfully talented people and teams. Without the assets they created, this game would not be what it is. All assets use are under either Creative Common (0) or Attribution 3.0. and Attribution-ShareAlike 3.0 Unported.
 
 <br/>
 
@@ -10,7 +10,6 @@ So a very special thank you to:
 
 ## Art Assets:
 ### Franks Laboratory
-Including all rotated varients of these files:
   * platform.png 
   * background.png
   * dog spritesheet
@@ -26,22 +25,27 @@ Including all rotated varients of these files:
 
 <br/>
 
+## Fonts:
+* Marcelo Magalhães
+  * Name: Londrina Sketch, created under a SIL OPEN FONT LICENSE Version 1.1 
+  * downloaded from fonts.google.com on April 30, 2025
+
 ## Sound Effects:
 
 ### metekavruk
-* death.ogg 
+* death.ogg
   * Original Name: Fruitbite.wav, created June 23rd, 2016
   * downloaded from FreeSound.org on April 30, 2025
 
 
 ### NicknameLarry
-* ghost.wav 
+* ghost.wav
   * Original Name: Fearful Scream, created March 14th, 2020
   * downloaded from FreeSound.org on April 30, 2025
 
 
 ### drynetuk
-* bark.wav 
+* bark.wav
   * Original Name: Hell_Hound.wav, created January 4th, 2020
   * downloaded from FreeSound.org on April 30, 2025
 

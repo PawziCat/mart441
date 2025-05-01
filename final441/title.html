@@ -28,7 +28,21 @@
                 font-style: bold;
                 width: 100%;
                 text-align: center;
-                
+            }
+
+
+                /* Style for the music */
+            .music-container {
+                display: flex;
+                justify-content: left;
+                align-items: bottom;
+                flex-grow: 1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1; /* Ensure it is behind other elements */
             }
     
 
@@ -38,7 +52,9 @@
                 justify-content: center;
                 align-items: center;
                 flex-grow: 1;
-                padding-bottom: 250pt;
+                padding-bottom: 250pt;  
+                z-index: 2; /* Ensure it is in front of other elements */
+
             }
     
             #startButton {
@@ -115,6 +131,13 @@
                 <h1>Start</h1>
             </button>
         </div>
+
+
+        <!-- Embed background music that plays automatically and loops -->
+        <div class="music-container">
+            <audio id="backgroundMusic" src="assets/sounds/backgroundMusic.wav" autoplay loop controls></audio>
+        </div
+    
 
         
         <!-- dog image, center align -->

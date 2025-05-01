@@ -21,16 +21,15 @@ For my game I decided to continue building on a previous game *Zuka's Shadow*. *
 * Add sound effects to the dog.
 * Add sound effects to the ghost when they drop in.
 * Add sound effect when the player dies.
-* Added a title screen
-* Added a button to initiate the game.
-  * Since the code kept wanting to position the start button to the left of the canvas and then center both on the page. To avoid this, I created a second page called 'title.html' to place the button and initiate the game from. In order for this to work, BOTH pages must have phaser.js in the scripts.
-  * I struggled to get the button to load the other page at first, it ended up being my placement of the code, the buttons redirect needed to be after the images.
-
-
-
-### Planned Additional Changes:
 * Added a level system in which when all the stars are collect, the level will change when the next round of objects and / or enemies appear.
-* POSSIBLY add other enemies.
+* Added a title screen.
+  * Added a header graphic for the game title.
+  * Positioned images of Zuka on a platform and the Ghosts floating nearby with different scale for visual interest.
+* Added a start button to the title page, when clicked it will initiate the game.
+  * I struggled to get the button to load the other page at first, it ended up being my placement of the code, the buttons redirect needed to be after the images.
+* Added a game over button that redirects the player back to the title page when the player dies.
+  * Took a bit of work to get the button to stay hidden until the player died. Originally it was appearing when the page was first loaded, not when the player died. It was also not overlayed over the game canvas and was appearing aligned to the left of the canvas and centered on the page together side by side.
+  * To fix the issue I placed the button in the body and style it to 'display: none' so that the button wouldn't visibly load with the page. Then I added its function as an addEventListener under the hitGhost function to ensure that it didn't "appear" until the hitGhost function ran.
 
 
 
