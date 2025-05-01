@@ -10,7 +10,6 @@ May 9, 2025
 For my game I decided to continue building on a previous game *Zuka's Shadow*. *Zuka's Shadow* it is about a dog named Zuka that is trying to survive in a world filled with dangerous, sugar crazed ghosts. The player objective is to collect Star Cookies to earn points and survive as long as possible, but be wary, the more Star Cookies you collect the more Ghosts Zuka attracts.
 
 
-
 ### All Updates and Changes:
 * Fixed the issue where the platforms had a odd issue where the png for the platforms and the collider for them were not functioning together properly.  
   * Discovered it was because of the setScale for the platforms as setScale(2) when the code does not allow for that.The solution was to return the setScale to setScale(1). This required me to make additional changes to the code and the the platform pngs.
