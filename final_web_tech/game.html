@@ -20,7 +20,7 @@
         /* Style for the music */
         .music-container {
             display: flex;
-            justify-content: right;
+            justify-content: left;
              align-items: top;
             flex-grow: 1;
             position: absolute;
@@ -369,8 +369,7 @@
         ghost.setCollideWorldBounds(true);
         ghost.setVelocity(Phaser.Math.Between(-200, 200), 20);
         ghost.allowGravity = false;
-
-    }
+        }
     }
 
 // hit ghost function    
@@ -395,16 +394,13 @@
             var ghostSound = new Audio('assets/sounds/ghost.wav');
             ghostSound.play();
             ghostSound.onended = function() {
-            // Redirect to 'title.html' when the sound ends
-            window.location.href = 'title.html';
+            // Redirect to 'index.html' when the sound ends
+            window.location.href = 'index.html';
              };
 
         });
 
     }
-
-
-
 
 
 </script>
